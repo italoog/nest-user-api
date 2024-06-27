@@ -99,10 +99,6 @@ src/
 
 Para mais detalhes sobre os endpoints e payloads, consulte a documentação Swagger disponível em `http://localhost:3000/api` quando a aplicação estiver em execução.
 
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
-
 ## Contato
 
 Italo Gomes - italo.og@outlook.com
