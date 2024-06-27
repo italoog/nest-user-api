@@ -79,7 +79,8 @@ src/
 ├── domain/
 │   ├── entities/
 │   ├── ports/
-│   └── use-cases/
+│   ├── use-cases/
+│   └── tokens.ts
 ├── infrastructure/
 │   ├── adapters/
 │   └── schemas/
@@ -97,16 +98,6 @@ src/
 - `POST /users`: Cria um novo usuário
 
 Para mais detalhes sobre os endpoints e payloads, consulte a documentação Swagger disponível em `http://localhost:3000/api` quando a aplicação estiver em execução.
-
-## Contribuindo
-
-Contribuições são bem-vindas! Por favor, siga estas etapas:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Faça commit das suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Faça push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
 
 ## Licença
 
