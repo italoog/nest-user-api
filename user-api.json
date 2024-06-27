@@ -1,0 +1,90 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "User API",
+    "version": "1.0.0",
+    "description": "API para gerenciamento de usuários"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "Listar todos os usuários",
+        "responses": {
+          "200": {
+            "description": "Lista de usuários retornada com sucesso"
+          }
+        }
+      },
+      "post": {
+        "summary": "Cadastrar um novo usuário",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "cpf": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  },
+                  "phone": {
+                    "type": "string"
+                  },
+                  "birthDate": {
+                    "type": "string",
+                    "format": "date"
+                  },
+                  "cep": {
+                    "type": "string"
+                  }
+                },
+                "required": ["name", "cpf", "email", "phone", "birthDate", "cep"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Usuário criado com sucesso"
+          },
+          "400": {
+            "description": "Dados inválidos"
+          }
+        }
+      }
+    },
+    "/users/{cpf}": {
+      "get": {
+        "summary": "Buscar usuário por CPF",
+        "parameters": [
+          {
+            "name": "cpf",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Usuário encontrado"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          }
+        }
+      }
+    }
+  }
+}
