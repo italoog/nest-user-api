@@ -39,7 +39,7 @@ Este projeto é uma API RESTful para gerenciamento de usuários, desenvolvida co
 
 3. Crie um arquivo `.env` na raiz do projeto e configure as variáveis de ambiente:
    ```
-   MONGODB_URI=mongodb://localhost:27017/nest-user-api
+   MONGODB_URI=mongodb://localhost:27017/user-api
    VIACEP_BASE_URL=https://viacep.com.br/ws
    ```
 
