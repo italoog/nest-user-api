@@ -39,8 +39,18 @@ Este projeto é uma API RESTful para gerenciamento de usuários, desenvolvida co
 
 3. Crie um arquivo `.env` na raiz do projeto e configure as variáveis de ambiente:
    ```
+   # Configurações do Servidor
+   PORT=3000
+   NODE_ENV=development
+
+   # Banco de Dados
    MONGODB_URI=mongodb://localhost:27017/user-api
-   VIACEP_BASE_URL=https://viacep.com.br/ws
+
+   # ViaCEP
+   VIACEP_BASE_URL=https://viacep.com.br/ws/
+
+   # Cors
+   CORS_ORIGIN=http://localhost:3000
    ```
 
 4. Se estiver usando Docker, inicie o MongoDB:
